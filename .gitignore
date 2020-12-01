@@ -130,3 +130,5 @@ dmypy.json
 
 .vscode
 setup.cfg
+data/
+out/
