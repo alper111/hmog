@@ -1,0 +1,14 @@
+g_layers: [128, 64, 1]
+g_input_shape: [256, 4, 4] # [num channels (first layer), height, width]
+depth: 5
+d_layers: [64, 128, 256]
+d_input_shape: [1, 32, 32]
+z_dim: 100
+device: "cuda"
+out_dir: "out/mnist"
+lr: 0.0001
+batch_size: 128
+epoch: 250
+test_size: 10000
+test_step: 10
+img_step: 1
