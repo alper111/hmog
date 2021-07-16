@@ -25,6 +25,6 @@ trainloader = torch.utils.data.DataLoader(trainset, batch_size=opts["batch_size"
 testloader = torch.utils.data.DataLoader(testset, batch_size=opts["test_size"], num_workers=4)
 # inception = InceptionV3().to(opts["device"])
 
-hmog.train(trainloader, testloader, inception=None, len(trainset.targets),
+hmog.train(trainloader, testloader, None, len(trainset.targets),
            opts["batch_size"], opts["epoch"], test_size=opts["test_size"],
            test_step=opts["test_step"], img_step=opts["img_step"])
